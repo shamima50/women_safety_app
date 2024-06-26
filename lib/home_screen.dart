@@ -64,8 +64,7 @@ void initState(){
                     ),
 
                   ),
-                 LiveSafe(),
-
+                  LiveSafe(),
                   SafeHome(),
             ],
               ),

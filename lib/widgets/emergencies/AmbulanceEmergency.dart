@@ -47,7 +47,7 @@ class AmbulanceEmergency extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Ambulace',
+                          'Ambulance',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
