@@ -70,7 +70,7 @@ class FirebrigadeEmergency extends StatelessWidget {
                           ),
                           child: Center(
                             child: Text(
-                              '0 -1 -6',
+                              '1 -8 -0',
                               style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,

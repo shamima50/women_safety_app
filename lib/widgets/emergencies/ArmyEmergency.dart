@@ -70,7 +70,7 @@ class ArmyEmergency extends StatelessWidget {
                           ),
                           child: Center(
                             child: Text(
-                              '1 -7 -1 -7',
+                              '8 -8 -8 ',
                               style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
