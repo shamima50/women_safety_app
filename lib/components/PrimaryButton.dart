@@ -2,14 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:women_safety_app/utils/constants.dart';
 
-class PrimaryButton  extends StatelessWidget{
+class PrimaryButton extends StatelessWidget {
   final String title;
   final Function onPressed;
   bool loading;
-  PrimaryButton({required this.title,required this.onPressed, this.loading=false});
-
-
-  const PrimaryButton({super.key});
+  PrimaryButton(
+      {required this.title, required this.onPressed, this.loading = false});
 
   @override
   Widget build(BuildContext context){
@@ -27,8 +25,7 @@ class PrimaryButton  extends StatelessWidget{
           shape:RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30)
           )
-
-        ), onPressed: () {  },
+        ),
       )
     );
   }

@@ -72,7 +72,7 @@ class PoliceEmergency extends StatelessWidget {
                             child: Text(
                               '0-1-5',
                               style: TextStyle(
-                                color: Colors.red[300],
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize:
                                 MediaQuery.of(context).size.width * 0.055,

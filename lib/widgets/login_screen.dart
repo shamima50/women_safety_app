@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:women_safety_app/components/custom_textfield.dart';
-import 'package:women_safety_app/components/primaryButton.dart';
-import 'package:women_safety_app/components/secondary.dart';
+import 'package:women_safety_app/components/PrimaryButton.dart';
+import 'package:women_safety_app/components/SecondaryButton.dart';
 import 'package:women_safety_app/utils/constants.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -13,55 +15,75 @@ class LoginScreen extends StatelessWidget {
       body:SafeArea(
 
         child:Padding(
-          padding:const EdgeInsects.all(8.0),
-            child:Column(
-
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          padding:const EdgeInsets.all(8.0),
+            child: Column(
               children:[
-                Text(
-                  "USER LOGIN",
-                  style:TextStyle(
-                      fontSize:40,
-                  fontWeight:FontWeight.bold,
-                  color:primaryColor
-                  ),
+                Container(
+                  height: MediaQuery.of(context).size.height*0.3,
+                  child: Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text(
+                          "USER LOGIN",
+                          style:TextStyle(
+                              fontSize:40,
+                          fontWeight:FontWeight.bold,
+                          color:primaryColor
+                          ),
 
-                ),
-                Image.asset(
-                  'assets/logo.jpg',
-                  height:100,
-                  width:10,
+                        ),
+                        Image.asset(
+                          'assets/logo.jpg',
+                          height:100,
+                          width:100,
 
-                ),
-                CustomTextField(
-                  hintText:"enter name",
-                  prefix:Icon(Icons.person),
-                ),
-                CustomTextField(
-                  hintText:'enter name',
-                  prefix:Icon(Icons.person),
-                ),
-                PrimaryButton(title:'RESISTER',onPressed:() {} )
-                Row(
-                  mainAxisAlignment:MainAxisAlignment.center,
-                  children:[
-                    Text(
-                      "Forget Password?",
-                      style:TextStyle(fontSize:18),
+                        ),
+                      ],
                     ),
-                    SecondaryButton(title:'Click Here',onPressed:() {} )
-                  ],
-                )
+                  ),
+                ),
 
+                Container(
+                  height: MediaQuery.of(context).size.height*0.5,
+                  child: Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        CustomTextField(
+                          hintText:"enter name",
+                          prefix:Icon(Icons.person),
+                        ),
+                        CustomTextField(
+                          hintText:'enter name',
+                          prefix:Icon(Icons.person),
+                        ),
+                        PrimaryButton(title:'RESISTER',onPressed:() {} ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                    Text(
+                    "FORGOT PASSWORD?",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                      SecondaryButton(title:'click here',onPressed:() {} ),
+                    ],
+                  ),
+                ),
                 SecondaryButton(title:'Resister new user',onPressed:() {} )
+
               ],
+
             ),
           ),
 
-        )
-      ),
-
-    );
-
+        ),
+      );
   }
 }

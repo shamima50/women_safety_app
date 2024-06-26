@@ -26,9 +26,9 @@ class AmbulanceEmergency extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Color(0xFFFD8080),
-                    Color(0xFFFB8580),
-                    Color(0xFFFBD079),
+                    Colors.cyan,
+                    Colors.blue,
+                    Colors.deepPurpleAccent,
                   ],
                 )),
             child: Padding(
@@ -58,11 +58,11 @@ class AmbulanceEmergency extends StatelessWidget {
                           'In case of medical emergency call',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: MediaQuery.of(context).size.width * 0.045,
+                            fontSize: MediaQuery.of(context).size.width * 0.025,
                           ),
                         ),
                         Container(
-                          height: 30,
+                          height: 28,
                           width: 80,
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -72,7 +72,7 @@ class AmbulanceEmergency extends StatelessWidget {
                             child: Text(
                               '1 -1 -2 -2',
                               style: TextStyle(
-                                color: Colors.red[300],
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize:
                                 MediaQuery.of(context).size.width * 0.055,
