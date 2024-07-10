@@ -2,7 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:women_safety_app/firebase_options.dart';
-import 'package:women_safety_app/home_screen.dart';
+import 'package:women_safety_app/child/bottom_screens/child_home_page.dart';
+
+import 'child/bottom_screens/child_home_page.dart';
 
 void main() async{
   /*WidgetsFlutterBinding.ensureInitialized();
