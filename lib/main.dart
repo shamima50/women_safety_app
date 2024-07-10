@@ -23,15 +23,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        textTheme: GoogleFonts.firaSansTextTheme(
-          Theme.of(context).textTheme,
-    ),
-         primarySwatch: Colors.blue,
-    ),
-      home: HomeScreen());
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          textTheme: GoogleFonts.firaSansTextTheme(
+            Theme.of(context).textTheme,
+          ),
+          primarySwatch: Colors.blue,
+        ),
+        home: HomeScreen());
 
   }
 }
