@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/widgets/emergencies/AmbulanceEmergency.dart';
-import 'package:women_safety_app/widgets/emergencies/ArmyEmergency.dart';
-import 'package:women_safety_app/widgets/emergencies/FirebrigadeEmergency.dart';
-import 'package:women_safety_app/widgets/emergencies/policeemErgency.dart';
+import 'package:women_safety_app/widgets/home_widgets/emergencies/policeemergency.dart';
 
-
-
+import 'emergencies/AmbulanceEmergency.dart';
+import 'emergencies/ArmyEmergency.dart';
+import 'emergencies/FirebrigadeEmergency.dart';
 
 class Emergency extends StatelessWidget {
   const Emergency({Key? key}) : super(key: key);
