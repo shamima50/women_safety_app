@@ -6,7 +6,7 @@ import 'package:women_safety_app/widgets/home_widgets/CustomCarouel.dart';
 import 'package:women_safety_app/widgets/home_widgets/custom_appBar.dart';
 import 'package:women_safety_app/widgets/home_widgets/emergency.dart';
 import 'package:women_safety_app/widgets/home_widgets/safehome/SafeHome.dart';
-//import 'package:women_safety_app/widgets/home_widgets/safehome/SafeHome.dart';
+import 'package:women_safety_app/widgets/home_widgets/safehome/SafeHome.dart';
 import 'package:women_safety_app/widgets/live_safe.dart';
 
 
