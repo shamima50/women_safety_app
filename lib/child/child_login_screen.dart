@@ -1,4 +1,5 @@
-
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:women_safety_app/child/bottom_page.dart';
@@ -7,6 +8,10 @@ import 'package:women_safety_app/components/SecondaryButton.dart';
 import 'package:women_safety_app/components/custom_textfield.dart';
 import 'package:women_safety_app/child/register_child.dart';
 import 'package:women_safety_app/utils/constants.dart';
+
+import '../db/share_pref.dart';
+import '../parents/parent_home_screen.dart';
+import '../parents/parent_register_screen.dart';
 
 
 
